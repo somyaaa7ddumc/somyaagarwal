@@ -1,0 +1,26 @@
+*{margin: 0;
+  padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    gap: 80px;
+    height: 80vh;
+}
+h1{
+
+    text-align:center;
+}
+.left img{
+    width: 300px;
+    height: auto;
+}
+.right{
+    background: white;
+    padding: 20px;
+    width: 320px;
+
+    border-radius: 8px;
+   }
