@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 1st animation</title>
+    <style>
+        /**{
+            margin: 0;
+        }*/
+        .ball{
+            height: 200px;
+            width: 200px;
+            /*border: solid;
+            border-color: black;
+            border-width: 7px;*/
+            position:relative;
+            animation-name: roll;
+            animation-duration: 5s;
+            /*animation-delay: 2s;*/
+            animation-iteration-count:infinite;
+            animation-direction:alternate ;
+            background-color:lawngreen;
+            border-radius: 50%;
+        }
+        .ball img{
+            border-radius: 50%;
+        }
+        /*.line{
+            height: 4px;
+            color: black;
+        }*/
+        @keyframes roll{
+            0%{
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+            /*20%{
+                 top: 0px;
+                left: 15px;
+                transform: rotate(720deg);
+            }
+            40%{
+                 top: 0px;
+                left: 30px;
+            }
+            60%{
+                 top: 0px;
+                left: 45px;
+            }
+            80%{
+                 top: 0px;
+                left: 60px;
+            }*/
+            100%{
+                top: 0px;
+                left: 85%;
+                transform: rotate(1080deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="ball"> 
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/51/baseball-157928_1280.png" alt="" height="200px" width="200px">
+  </div>
+</body>
+</html>
