@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zodiac Sign </title>
+    <style>
+        body{
+            background-color: beige;
+            color: black;
+            font-size: 40px;
+        }
+        body{
+    background-color: beige;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: beige;
+    color: black;
+
+animation-name: sign;
+            animation-duration: 2s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+        
+}
+ @keyframes sign {
+            0%, 20%{
+                
+                transform: scale();
+            }
+            10% {
+              
+                transform: scale(1.1);
+            }
+            20%, 100%{
+                
+                transform: scale();
+            }
+        }
+
+.sign:hover{
+    transform: scale(1.1);
+     background-color: black;
+    color: beige;
+}
+
+.line1{
+    margin-bottom: 10px;
+}
+
+.line2{
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
+    </style>
+</head>
+<body>
+    <script>
+        let d, m, z;
+        d = parseInt(prompt("Enter the Date"));
+        m = prompt("Enter the Month");
+        z="";
+        if((m == "march" && d>=21)||(m == "april" && d<=19)){
+            z="Aries";
+        }
+        else if((m == "apri;" && d>=20)||(m == "may" && d<=20)){
+            z="Tauras";
+        }
+        else if((m == "may" && d>=21)||(m == "june" && d<=21)){
+            z="Gemini";
+        }
+        else if((m == "june" && d>=22)||(m == "july" && d<=22)){
+            z="Cancer";
+        }
+        else if((m == "july" && d>=21)||(m == "august" && d<=19)){
+            z="Leo";
+        }
+        else if((m == "august" && d>=21)||(m == "september" && d<=19)){
+            z="Virgo";
+        }
+        else if((m == "september" && d>=21)||(m == "october" && d<=19)){
+            z="Libra";
+        }
+        else if((m == "october" && d>=21)||(m == "november" && d<=19)){
+            z="Scorpio";
+        }
+        else if((m == "november" && d>=21)||(m == "december" && d<=19)){
+            z="Sagittarius";
+        }
+        else if((m == "december" && d>=21)||(m == "january" && d<=19)){
+            z="Capricorn";
+        }
+        else if((m == "january" && d>=21)||(m == "febuary" && d<=19)){
+            z="Aquarius";
+        }
+        else if((m == "febuary" && d>=21)||(m == "march" && d<=19)){
+            z="Pisces";
+        }
+    
+        document.write(`
+        <div class="sign">
+            <div class="dob">${d} ${m}</div>
+            <div class="zodiac">${z}</div>
+            </div>
+        `);
+    </script>
+</body>
+</html>
